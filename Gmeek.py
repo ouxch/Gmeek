@@ -151,7 +151,7 @@ class GMEEK():
         if data_canonical_src:
             canonical_src = data_canonical_src.group(1)
             # 替换a标签的href属性
-            a_tag = re.sub(r'href="[^"]*"', f'href="{canonical_src}"', a_tag)
+            # a_tag = re.sub(r'href="[^"]*"', f'href="{canonical_src}"', a_tag)
             # 替换img标签的src属性
             img_tag = re.sub(r'src="[^"]*"', f'src="{canonical_src}"', img_tag)
             # 删除data-canonical-src属性
